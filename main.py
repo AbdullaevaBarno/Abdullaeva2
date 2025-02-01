@@ -10,7 +10,7 @@ from db import add_user,show_users, add_review,close_db,create_tables
 
 api='7051245348:AAGiwFpJ3sG9qrNRxo7jJORTJfVDIRkR_nE'
 PROXY_URL = "http://proxy.server:3128/"
-bot=Bot(api)
+bot=Bot(api, proxy=PROXY_URL)
 storage = MemoryStorage()
 dp=Dispatcher(bot,storage=storage)
 
